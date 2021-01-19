@@ -1,0 +1,61 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+Add Data Page
+{% endblock title %}
+
+{% block custom_css %}
+<style>
+.bg_blue{
+padding:10px;
+border-radius:10px;
+box-shadow:3px 3px 3px grey;
+background:dodgerblue;
+color:#fff;
+}
+.custom-block{
+padding:15px;
+border:1px solid dodgerblue;
+}
+.block-area{
+margin-top:30px
+}
+.form-area{
+border:1px solid dodgerblue;
+padding:15px;
+}
+.head-title{
+padding:5px;
+background:dodgerblue;
+color:#fff;
+margin-bottom:10px;
+}
+.block-border{
+border:1px solid dodgerblue;
+padding:20px;
+margin-top:10px;
+}
+</style>
+{% endblock custom_css %}
+
+{% block bodydata %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Welcome , {{ user.get_username }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2" >
+            <a href="/customer" class="btn btn-info btn-block">Customer</a>
+        </div>
+        <div class="col-lg-2">
+            <a href="/internaluser" class="btn btn-info btn-block">internal user</a>
+        </div>
+    </div>
+</div>
+{% endblock bodydata %}
+
+{% block custom_js %}
+{% endblock custom_js %}
+
